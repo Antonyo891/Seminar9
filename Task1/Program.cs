@@ -6,7 +6,7 @@ string NaturalNumber (int LastNumber)
     if (LastNumber==1)
     {
          //WriteLine(1);
-         return "1";}
+         return $"{M}";}
     string s = NaturalNumber(LastNumber-1) + ", " + LastNumber.ToString();
         //WriteLine(s);
         return s;
