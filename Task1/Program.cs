@@ -1,11 +1,15 @@
 ﻿/*Задача 63.При помощи рекурсии ввести на экран натуральные числа до N*/
 using System;
 using static System.Console;
-void NaturalNumber (int LastNumber)
+string NaturalNumber (int LastNumber)
 {
-    Write($"{LastNumber} ");
-    if (LastNumber>=2) NaturalNumber(LastNumber-1);
-    WriteLine();
+    if (LastNumber==1)
+    {
+         //WriteLine(1);
+         return "1";}
+    string s = NaturalNumber(LastNumber-1) + ", " + LastNumber.ToString();
+        //WriteLine(s);
+        return s;
 }
 Clear();
-NaturalNumber(10);
+WriteLine(NaturalNumber(10));
