@@ -1,4 +1,4 @@
-﻿/*Задача. Вернуть сумму цифр числа. Рекурсия*/
+﻿/*Задача 67. Вернуть сумму цифр числа. Рекурсия*/
 using System;
 using static System.Console;
 int Enter(string n)
